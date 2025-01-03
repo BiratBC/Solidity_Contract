@@ -1,0 +1,37 @@
+Private key ||| > Public key > address
+
+Private key generates public key
+
+and Messages/transaction bind with your private key generates a signature using digital hashing method
+
+Consensus : mechanism used to reach a state of agreement , majority matters , decide whether the transaction is valid or not or the current state is valid
+
+chain selection 
+
+bitcoin uses proof of work and longest chain rule-> longest chained block will be used
+block confirmations -> upcomimng no of blocks after our transaction
+
+sybil resistance -> proof of work and proof of stake
+
+etherium 2 : proof of stake (shifted from poW)
+
+bitcoin : proof of work
+
+Proof of work : mining, computational actiivties , miners get the transaction fee,
+nodes compete with each other to find the hash and the one who finds it are rewarded with block reward (time limited) and transaction fee
+
+gas fee -> depends on how mmuch interation with blockchain
+51% attack -> since MAJORITY is the key of blockchain if a miner (or attacker) adds block to the 'private' network, if takes control of 51% of network  
+
+Proof of Stake : (collatral) Validators and Nominators , validators get the transaction fee
+\validators : role of producing new blocks, validating parachain blocks, and guaranteeing finality.
+- each node of the blockchain will have some stake on them and if they misbehave  or have shown malicious activities , they will loose all the stake of all nodes
+
+sharding -> scalibility (when number of blocks are addded to the blockchain -> which can increase the amount of gas price) soln (blockvhain of blockchains) , used by layer 1 implementaion blockchain -> eth, btc
+rollups-> same soln to scalibilty problem
+
+deploymet costs the transaction fee and yellow buttons fucntions causes gas fee and transaction fee
+
+smart contracts cannot directly get in contact with outer world like https request, api call, or existing payment systems but also smart contaract should not depend upon a single node
+if thats the case it will loose its main feature of decentralization
+ORACLE PROBLEM
