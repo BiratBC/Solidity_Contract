@@ -8,12 +8,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "ethAmount",
+						"type": "uint256"
 					}
 				],
-				"name": "addressToAmountFunded",
+				"name": "getConversionRate",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -26,25 +26,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "fund",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [
+				"name": "getPrice",
+				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
-					}
-				],
-				"name": "funders",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -52,7 +39,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "minimumUSD",
+				"name": "getVersion",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -77,7 +64,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/FundMeApp/contracts/FundMe.sol": "FundMe"
+			"contracts/FundMeApp/contracts/PriceConverter.sol": "PriceConverter"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -97,14 +84,6 @@
 			"urls": [
 				"bzz-raw://6d39e11b1dc7b9b8ccdabbc9be442ab7cda4a81c748f57e316dcb1bcb4a28bf9",
 				"dweb:/ipfs/QmaG6vz6W6iEUBsbHSBob5mdcitYxWjoygxREHpsJHfWrS"
-			]
-		},
-		"contracts/FundMeApp/contracts/FundMe.sol": {
-			"keccak256": "0xc5b4c168a66a08b8e1a1db5f641eb4ed52ee04831d2d6aa4b2d4e69759211d94",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://7689230f3daa57e4d773333302525391c76b74e116932cfc6fd8624f300356f8",
-				"dweb:/ipfs/QmQYVaqXnpJZq2EcC99cMfj2KokxHjs7xZhLGZCCSPVCMP"
 			]
 		},
 		"contracts/FundMeApp/contracts/PriceConverter.sol": {
